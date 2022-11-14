@@ -1,23 +1,31 @@
 ﻿
 namespace Day4SnakeAndLadder
 {
-    internal class UC1SnakeLadderGame
+           class UC4SnakeLadderGame
     {
         static void Main(string[] args)
         {
-             {
-                int playerPosition = 0;
-                Random random = new Random();
+
+            int playerPosition = 0;
+            Random random = new Random();
+
+            while (playerPosition != 100)
+            {
+                //generate roll
                 int roll = random.Next(1, 7);
+                //generate option
                 int option = random.Next(0, 3);
-                   switch (option)
+
+                switch (option)
                 {
                     case 0:
-                         Console.WriteLine("Player choose not to play.");
+                        //no play
+                        Console.WriteLine("Player choose not to play.");
                         break;
                     case 1:
                         playerPosition += roll;
                         Console.WriteLine("Player choose the ladder. Player new position is: {0}", playerPosition);
+                        //ladder
                         break;
                     case 2:
                         playerPosition -= roll;
@@ -26,10 +34,10 @@ namespace Day4SnakeAndLadder
                             playerPosition = 0;
                         }
                         Console.WriteLine("Player choose the snake. Player new position is: {0}", playerPosition);
+                        //snake
                         break;
                 }
             }
-
 
         }
     }
