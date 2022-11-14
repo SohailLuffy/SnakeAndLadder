@@ -1,7 +1,7 @@
 ﻿
 namespace Day4SnakeAndLadder
 {
-    internal class UC1SnakeLadderGame
+    internal class UC4SnakeLadderGame
     {
         static void Main(string[] args)
         {
