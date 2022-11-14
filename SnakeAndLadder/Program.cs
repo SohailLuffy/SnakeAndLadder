@@ -5,11 +5,10 @@ namespace Day4SnakeAndLadder
     {
         static void Main(string[] args)
         {
-            int playerPosition = 0;
+                Random random = new Random();
+                int roll = random.Next(1, 7);
 
-            Console.WriteLine("It's a single player game. ");
-            Console.WriteLine("Single player position is: " + playerPosition);
+                Console.WriteLine("The Player roll is: " + roll);
+            }
         }
-
     }
-}
