@@ -1,11 +1,15 @@
-﻿namespace SnakeAndLadder
+﻿
+namespace Day4SnakeAndLadder
 {
-    internal class Program
+    internal class UC1SnakeLadderGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Snake and Ladder");
-            Console.ReadLine();
+            int playerPosition = 0;
+
+            Console.WriteLine("It's a single player game. ");
+            Console.WriteLine("Single player position is: " + playerPosition);
         }
+
     }
 }
